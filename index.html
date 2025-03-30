@@ -1,21 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirAMJJ</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Bored ko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 class="header_text"> Kumain kana? </h1>
-        <div class="gif_container">
-            <img src="https://media.tenor.com/Z3cHKY-9vuQAAAAi/cingcing-my-melody.gif" alt="Cute GIF">
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>VirAMJJ</h1>
+                <p>Resource Support Platform</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#urgent-needs">Urgent Needs</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-secondary">Login</a>
+                <a href="#register" class="btn btn-primary">Register</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="buttons">
-            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-            <button class="btn" id="noButton" onclick="nextPagee()">No</button>
-        </div>
-    </div>
+    </nav>
 
-    <script src="script.js"></script> 
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Virlanie Faith, Inc.</h1>
+                <p>Helping street children and youth at risk through the provision of Education, Skills and Basic Needs.</p>
+                <div class="hero-buttons">
+                    <a href="#donate" class="btn btn-primary">Donate Now</a>
+                    <a href="#learn-more" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="cover.jpeg" alt="Children at Virlanie Foundation">
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Our platform connects donors directly with Virlanie Faith, Inc. to address urgent needs.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Browse Needs</h3>
+                    <p>View just in time updates of urgent resources and support needed by Virlanie Faith, Inc.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>2. Choose How to Help</h3>
+                    <p>Donate goods, provide monetary support, or volunteer your services</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>3. Make a Difference</h3>
+                    <p>Your contribution is delivered directly to Virlanie</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>4. Stay Connected</h3>
+                    <p>Receive updates about the impact of your donation and future needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgent Needs Section -->
+    <section id="urgent-needs" class="urgent-needs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Urgent Needs</h2>
+                <p>Here are the current high-priority items and services needed by Virlanie Faith, Inc.</p>
+            </div>
+            <div class="needs-container">
+                <div class="needs-card">
+                    <div class="needs-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food Supplies</h3>
+                    <p>Rice, canned goods, milk, and other non-perishable food items</p>
+                    <span class="urgency high">High Priority</span>
+                    <a href="#donate-food" class="btn btn-secondary">Donate Now</a>
+                </div>
+                <div class="needs-card">
+                    <div class="needs-icon">
+                        <i class="fas fa-prescription-bottle-alt"></i>
+                    </div>
+                    <h3>Medicines</h3>
+                    <p>Fever reducers, vitamins, and first aid supplies</p>
+                    <span class="urgency medium">Medium Priority</span>
+                    <a href="#donate-medicine" class="btn btn-secondary">Donate Now</a>
+                </div>
+                <div class="needs-card">
+                    <div class="needs-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Clothing</h3>
+                    <p>Children's clothes (ages 5-60), shoes, and school uniforms</p>
+                    <span class="urgency high">High Priority</span>
+                    <a href="#donate-clothes" class="btn btn-secondary">Donate Now </a>
+                </div>
+                <div class="needs-card">
+                    <div class="needs-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Monetary Support</h3>
+                    <p>For facility maintenance and educational programs</p>
+                    <span class="urgency medium">Medium Priority</span>
+                    <a href="#donate-money" class="btn btn-secondary">Donate Now</a>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#all-needs" class="btn btn-outline">View All Needs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="About.jpeg" alt="Virlanie Faith, Inc. Shelter">
+                </div>
+                <div class="about-text">
+                    <h2>About Virlanie Faith, Inc.</h2>
+                    <p>Virlanie Faith, Inc. is dedicated to providing care and protection to street children in the Philippines. For over 25 years, we have been committed to helping abandoned, abused, and disadvantaged children.</p>
+                    <p>Our mission is to ensure every child has access to basic needs, education, and a loving environment where they can thrive and develop into responsible individuals.</p>
+                    <a href="#about-more" class="btn btn-outline">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ways to Support</h2>
+                <p>Choose how you would like to contribute to Virlanie Faith, Inc.</p>
+            </div>
+            <div class="donation-options">
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>In-Kind Donations</h3>
+                    <p>Donate essential items such as food, clothing, toiletries, books, and other supplies</p>
+                    <a href="#in-kind" class="btn btn-primary">Donate Items</a>
+                </div>
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Monetary Donations</h3>
+                    <p>Contribute financially to help with operational costs and special programs</p>
+                    <a href="#monetary" class="btn btn-primary">Donate Money</a>
+                </div>
+                <div class="donation-card">
+                    <div class="donation-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Volunteer Services</h3>
+                    <p>Share your time, skills, and knowledge to directly help the children and staff</p>
+                    <a href="#volunteer" class="btn btn-primary">Volunteer Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2> Articles </h2>
+                <p>See how your donations make a children lives happy</p>
+            </div>
+            <div class="stories-container">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="story.jpeg" alt="STEPS OF KINDNESS">
+                    </div>
+                    <div class="story-content">
+                        <h3>February Street Walk</h3>
+                        <p>Yesterday, the Virlanie FAITH Team, along with our ODC Interns Angel Mae and EJ, took to the streets again, traversing 6th Street, Libertad Market, and the East area to reach street children and families in need. We were able to distribute 60 food packs and drinks, offering not just nourishment but also moments of care and connection. </p>
+                        <a href="#story1" class="read-more">Read Full Story</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="story1.jpeg" alt="SAFE PRACTICES">
+                    </div>
+                    <div class="story-content">
+                        <h3>Virlanie FAITH Hosts HIV AIDS Awareness Lecture</h3>
+                        <p>Last Feb. 14, 2025, for Valentine’s Day, we reaffirmed our commitment to health and safety by once again partnering with Amlig Health Clinic and AHF for a free HIV and AIDS Awareness Lecture at the Virlanie FAITH Open Day Center. With over 50 participants from the community, the session provided vital knowledge on the importance of testing, safe sex practices, and breaking the stigma surrounding HIV and AIDS- all within a safe space where they could ask freely about this topic with no judgment and fear of embarrassment.</p>
+                        <a href="#story2" class="read-more">Read Full Story</a>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="story3.jpeg" alt="BLESSINGS SHARED">
+                    </div>
+                    <div class="story-content">
+                        <h3>Celebrate your special occasions with Virlanie FAITH!</h3>
+                        <p>Make your birthday—or any special occasion—even more meaningful by sharing it with the kids of Virlanie FAITH! This simple act of kindness can bring joy to street children and at-risk youth, giving them a reason to smile and feel truly special. Whether a small gathering a fun-filled party, or a contribution of any kind, your generosity can create moments of happiness and belonging for children who need it most.</p>
+                        <a href="#story3" class="read-more">Read Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer">
+        <div class="container">
+            <div class="volunteer-content">
+                <div class="volunteer-text">
+                    <h2>Volunteer With Us</h2>
+                    <p>Share your time and skills to make a direct impact on the lives of children at Virlanie Faith, Inc.</p>
+                    <ul class="volunteer-options">
+                        <li><i class="fas fa-chalkboard-teacher"></i> Tutoring & Education</li>
+                        <li><i class="fas fa-paint-brush"></i> Arts & Crafts Activities</li>
+                        <li><i class="fas fa-laptop-code"></i> IT Support</li>
+                        <li><i class="fas fa-heartbeat"></i> Medical Assistance</li>
+                        <li><i class="fas fa-seedling"></i> Gardening & Sustainable Living</li>
+                    </ul>
+                    <a href="#volunteer-form" class="btn btn-primary">Apply as Volunteer</a>
+                </div>
+                <div class="volunteer-image">
+                    <img src="volunteer.jpeg" alt="Volunteers working with children">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Donors Say</h2>
+                <p>Hear from people who have already made a difference</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Being able to see exactly what the charity needs in time has made donating so much more meaningful. I know my contribution is making an immediate impact."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="feve.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>Meljah Feve Soliva</h4>
+                            <p>Regular Donor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The volunteer coordination through this platform made it so easy to offer my services when I had time available. The experience was incredibly rewarding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="teya.jpeg" alt="Volunteer portrait">
+                        <div class="author-info">
+                            <h4>Alteyah Marree Hausan</h4>
+                            <p>Volunteer Teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"My Goal is to help poor people"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="janrey.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>Jan Rey Gorre</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I appreciate the transparency of knowing exactly where my donations go and receiving updates about the impact. It builds trust and encourages continued support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="lloyd.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>John Lloyd Romano</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"My Goal is to help poor people"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="janrey.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>Jan Rey Gorre</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I appreciate the transparency of knowing exactly where my donations go and receiving updates about the impact. It builds trust and encourages continued support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="lloyd.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>John Lloyd Romano</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I appreciate the transparency of knowing exactly where my donations go and receiving updates about the impact. It builds trust and encourages continued support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="lloyd.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>John Lloyd Romano</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"I appreciate the transparency of knowing exactly where my donations go and receiving updates about the impact. It builds trust and encourages continued support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="lloyd.jpeg" alt="Donor portrait">
+                        <div class="author-info">
+                            <h4>John Lloyd Romano</h4>
+                            <p>Monthly Supporter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                    <span class="dot active"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Your contribution, big or small, can change lives at Virlanie Faith, Inc.</p>
+            <div class="cta-buttons">
+                <a href="#donate" class="btn btn-primary">Donate Now</a>
+                <a href="#volunteer" class="btn btn-secondary">Volunteer</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>VirAMJJ</h3>
+                    <p>A web-based resource support platform for Virlanie Faith, Inc. that connects donors with just in time charity needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#urgent-needs">Urgent Needs</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> #11 Cordova Ave., Hospital Road, Barangay 18, Bacolod CIty, Philippines</li>
+                        <li><i class="fas fa-phone"></i> (034) 434-4561</li>
+                        <li><i class="fas fa-envelope"></i> virlaniefaith.org</li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VirAMJJ. All rights reserved. | Developed by 4MULA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
